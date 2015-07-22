@@ -7,17 +7,20 @@ var map;
 
 function initialize(lat,lon) { 
 
-myLatlng = new google.maps.LatLng(lat, lon);
+myLatlng = new google.maps.LatLng(lat,lon);
 
 var mapOptions = { 
 zoom: 8, 
 center: myLatlng 
 }; 
 map = new google.maps.Map(document.getElementById('map-canvas'),mapOptions); 
+alert(map);
 } 
 
-google.maps.event.addDomListener(window, 'load', initialize);
+
+
 function onBodyLoad(){
+google.maps.event.addDomListener(window, 'load', initialize);
 navigator.geolocation.getCurrentPosition(onSuccess, onError); 
 
 }
@@ -27,7 +30,7 @@ navigator.geolocation.getCurrentPosition(onSuccess, onError);
              
 function onSuccess(position) { 
 initialize(position.coords.latitude,position.coords.longitude); 
-alert(position.coords.latitude+" / "+position.coords.longitude);
+//alert(position.coords.latitude+" / "+position.coords.longitude);
 } 
                        
 function onError(error) { 
