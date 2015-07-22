@@ -3,9 +3,9 @@ function init()
 	$("div:jqmData(role='panel')").css('margin-top',  ($("div:jqmData(role='header')").height()));
 	
 }
-function miPocision()
-{
-	$("#contenedor").load("mapa.html");
+function miPocision(){
+
+	$("#contenedor").html('<center><h4>Mi pocision actual</h4></center><div id="map-canvas"></div>');
 	navigator.geolocation.getCurrentPosition(initialize, onError); 
 }
 var map; 
