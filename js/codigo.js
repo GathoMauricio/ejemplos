@@ -50,3 +50,20 @@ var marcador = new google.maps.Marker({
       draggable:false
      });
 } 
+
+function setDato()
+{
+	var clave=prompt("Dame clave");
+	var valor=prompt("Dame valor");
+	window.localStorage.setItem("key2", "value2");
+}
+function getDato()
+{
+	 var clave=prompt("Dame clave");
+	 var value = window.localStorage.getItem(clave);
+	 alert("El valor es "+value);
+}
+function clearDato()
+{
+	 window.localStorage.clear();
+}
