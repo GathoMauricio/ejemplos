@@ -55,7 +55,7 @@ function setDato()
 {
 	var clave=prompt("Dame clave");
 	var valor=prompt("Dame valor");
-	window.localStorage.setItem("key2", "value2");
+	window.localStorage.setItem(clave,valor);
 }
 function getDato()
 {
