@@ -5,9 +5,9 @@ function init()
 }
 var map; 
 
-function initialize(lat,lon) { 
+function initialize(position) { 
 
-myLatlng = new google.maps.LatLng(lat,lon);
+myLatlng = new google.maps.LatLng(position.coords.latitude,position.coords.longitude);
 
 var mapOptions = { 
 zoom: 8, 
@@ -20,8 +20,7 @@ alert(map);
 
 
 function onBodyLoad(){
-google.maps.event.addDomListener(window, 'load', initialize);
-navigator.geolocation.getCurrentPosition(onSuccess, onError); 
+navigator.geolocation.getCurrentPosition(initialize, onError); 
 
 }
 function onDeviceReady() { 
