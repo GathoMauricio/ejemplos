@@ -6,8 +6,9 @@ function init()
 var map; 
 
 function initialize(position) { 
-$("#map-canvas").css("width",screen.width);
-$("#map-canvas").css("height",screen.height);
+$("#map-canvas").css("width","100%");
+$("#map-canvas").css("height","120px");
+
 myLatlng = new google.maps.LatLng(position.coords.latitude,position.coords.longitude);
 
 var mapOptions = { 
@@ -23,8 +24,8 @@ navigator.geolocation.getCurrentPosition(initialize, onError);
 }
                      
 function onError(error) { 
- $("#map-canvas").css("width",screen.width);
-$("#map-canvas").css("height",screen.height);
+$("#map-canvas").css("width","100%");
+$("#map-canvas").css("height","120px");
 myLatlng = new google.maps.LatLng(-34.397, 150.644);
 
 var mapOptions = { 
