@@ -21,7 +21,12 @@ zoom: 18,
 center: myLatlng 
 }; 
 map = new google.maps.Map(document.getElementById('map-canvas'),mapOptions); 
-
+var marcador = new google.maps.Marker({
+      position:myLatlng,
+      map:map,
+      animation:google.maps.Animation.DROP,
+      draggable:false
+     });
 } 
 
 function onBodyLoad(){
@@ -38,4 +43,10 @@ zoom: 18,
 center: myLatlng 
 }; 
 map = new google.maps.Map(document.getElementById('map-canvas'),mapOptions);
+var marcador = new google.maps.Marker({
+      position:myLatlng,
+      map:map,
+      animation:google.maps.Animation.DROP,
+      draggable:false
+     });
 } 
