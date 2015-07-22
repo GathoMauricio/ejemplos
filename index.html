@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>Hello PhoneGap</title>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no;" />
+        <meta charset="utf-8">
+
+
+        <script type="text/javascript" charset="utf-8" src="phonegap.js"></script>
+        <script type="text/javascript" charset="utf-8" src="jquery/jquery.js"></script>
+        <script type="text/javascript" charset="utf-8" src="jquery/jquery.mobile.custom.min.js"></script>
+        <script type="text/javascript" charset="utf-8" src="js/codigo.js"></script>
+        <link rel="stylesheet" type="text/css" href="jquery/jquery.mobile.custom.structure.min.css">
+        <link rel="stylesheet" type="text/css" href="css/estilo.css">
+        <script type="text/javascript">
+        $(document).ready(init);
+        function onBodyLoad()
+        {       
+            document.addEventListener("deviceready", onDeviceReady, false);
+        }
+
+        function onDeviceReady()
+        {
+            // do your thing!
+            navigator.notification.alert("PhoneGap is working")
+        }
+
+        </script>
+    </head>
+    <body onload="onBodyLoad()">
+
+    <div data-role="page"> 
+  <div data-role="header" class="header" data-position="fixed" id="menu"> 
+    <h1>Menu</h1> 
+    <a href="#panel" id="abre_panel" class="panel-btn"></a> 
+  </div> 
+   
+  <div data-role="panel" id="panel" data-position-fixed="true" data-position="left" data-display="overlay"> 
+    <ul data-role="listview"> 
+      <li data-icon="false"><a href="#" class="panel_li"  >OPCION1</a></li> 
+      <li data-icon="false"><a href="#" class="panel_li"  >OPCION2</a></li> 
+      <li data-icon="false"><a href="#" class="panel_li"  >OPCION3</a></li> 
+      <li data-icon="false"><a href="#" class="panel_li"  >OPCION4</a></li> 
+      <li data-icon="false"><a href="#" class="panel_li"  >OPCION5</a></li> 
+    </ul> 
+  </div> 
+
+  <div data-role="content"> 
+    <p>Mis ejemplos!!! Gatho.</p> 
+  </div> 
+</div>
+    </body>
+</html>
+

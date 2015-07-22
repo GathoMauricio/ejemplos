@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<widget xmlns = "http://www.w3.org/ns/widgets"
+    xmlns:gap = "http://phonegap.com/ns/1.0"
+    id        = "com.phonegap.example"
+    version   = "1.0.0">
+
+<name>Gatho</name>
+
+<description>
+Ejemplos Phonegap
+</description>
+
+<author href="https://example.com" email="you@example.com">
+Gatho
+</author>
+<icon src="img/icono.png"/>
+</widget>
