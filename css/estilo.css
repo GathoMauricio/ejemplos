@@ -7,20 +7,19 @@
   box-shadow: none; 
   background-color: transparent !important; 
   border: none; 
-  left: -5px; 
   top: 0; 
   margin-top: 6px !important; 
 } 
 #menu
 {
-  background-color: black;
+  background-color: #086A87;
   color: white;
 }
 #panel
 {
-  background-color: white;
-  border :solid 2px black;
+  background-color: #086A87;
 }
-li{
-border :solid 1px black;
+a{
+color:white;
+text-decoration: none;
 }

@@ -13,5 +13,8 @@ Ejemplos Phonegap
 <author href="https://example.com" email="you@example.com">
 Gatho
 </author>
+<!--Acceso a URLs externas-->
+<access origin="*" />
+<gap:plugin name="org.apache.cordova.geolocation" version="0.3.6" />
 <icon src="img/icono.png"/>
 </widget>
