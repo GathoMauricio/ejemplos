@@ -16,7 +16,7 @@ Gatho
 <!--Acceso a URLs externas-->
 <access origin="*" />
 <gap:plugin name="org.apache.cordova.geolocation" version="0.3.6" />
-<plugin name="Notification" value="org.apache.cordova.Notification"/>
-<uses-permission android:name="android.permission.VIBRATE" />
+<gap:plugin name="Notification" value="org.apache.cordova.Notification"/>
+<gap:uses-permission android:name="android.permission.VIBRATE" />
 <icon src="img/icono.png"/>
 </widget>
